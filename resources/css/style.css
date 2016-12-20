@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  color: #555;
+  /*font-family: ;*/
+  font-size: 20px;
+  /*font-weight: ;*/
+  text-rendering: optimizeLegibility;
+}
