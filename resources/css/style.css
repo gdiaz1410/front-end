@@ -1,3 +1,5 @@
+/*SETUP ************/
+
 * {
   margin: 0;
   padding: 0;
@@ -12,8 +14,109 @@ html {
   text-rendering: optimizeLegibility;
 }
 
+/*COMPONENTS *********/
+
 .row {
   max-width: 1140px;
   /*center continer in another container*/
   margin: 0 auto;
+}
+
+/*HEADINGS *************/
+
+h1 {
+  /*overwrite normalize*/
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #fff;
+  /* 240% of font size defined relatively in html css */
+  font-size: 240%;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+}
+
+/*BUTTONS *****************/
+
+/*a tag in normal state then when visited*/
+.btn:link,
+.btn:visited {
+  /*inline-block allows padding and margin*/
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 200px;
+  color: #fff;
+  border: 1px solid #fff;
+  transition: background-color 0.2s;
+}
+
+.btn:hover {
+  background-color: red;
+}
+
+.btn-full:link,
+.btn-full:visited {
+  margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+
+}
+
+/*HEADER*/
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("img/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  /*100% of viewport*/
+  height: 100vh;
+}
+
+.hero-text-box {
+  position: absolute;
+  width: 1140px;
+  top: 50%;
+  left: 50%;
+  /*50/50 top and left*/
+  transform: translate(-50%, 50%);
+}
+
+.logo {
+  height: 100px;
+  width: auto;
+  float: left;
+  margin-top: 20px;
+}
+
+.main-nav {
+  float: right;
+  list-style: none;
+  margin-top: 60px;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+  padding: 8px 0;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  /*90% of 20px in html*/
+  font-size: 90%;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+  border-bottom: 2px solid white;
 }
