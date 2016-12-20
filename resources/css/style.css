@@ -11,3 +11,9 @@ html {
   /*font-weight: ;*/
   text-rendering: optimizeLegibility;
 }
+
+.row {
+  max-width: 1140px;
+  /*center continer in another container*/
+  margin: 0 auto;
+}
