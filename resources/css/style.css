@@ -1,0 +1,226 @@
+/*SETUP ************/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  color: #555;
+  /*font-family: ;*/
+  font-size: 20px;
+  /*font-weight: ;*/
+  text-rendering: optimizeLegibility;
+}
+
+/*COMPONENTS *********/
+
+.row {
+  max-width: 1140px;
+  /*center continer in another container*/
+  margin: 0 auto;
+}
+
+section {
+  padding: 80px 0;
+}
+
+.box {
+  padding: 1%;
+}
+
+/*HEADINGS *************/
+
+h1, h2, h3 {
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #fff;
+  /* 240% of font size defined relatively in html css */
+  font-size: 240%;
+  word-spacing: 3px;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-size: 180%;
+  word-spacing: 2px;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+h3 {
+  font-size: 110%;
+  margin-bottom: 15px;
+}
+
+h2:after {
+  display: block;
+  height: 2px;
+  background-color: orange;
+  content: " ";
+  width: 100px;
+  /*center*/
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+/*PARAGRAPHS ***********/
+
+.long-copy {
+  line-height: 145%;
+  width: 70%;
+  /*15% will take care of remaining space on width. Remaining 30 split*/
+  margin-left: 15%;
+}
+
+.box p {
+  font-size: 90%;
+  line-height: 145%;
+}
+
+/*ICONS*/
+
+.icon-big {
+  font-size: 350%;
+  display: block;
+  color: orange;
+  margin-bottom: 10px;
+}
+
+/*BUTTONS *****************/
+
+/*a tag in normal state then when visited*/
+.btn:link,
+.btn:visited {
+  /*inline-block allows padding and margin*/
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 200px;
+  color: #fff;
+  border: 1px solid #fff;
+  transition: background-color 0.2s;
+}
+
+.btn:hover {
+  background-color: red;
+}
+
+.btn-full:link,
+.btn-full:visited {
+  margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+
+}
+
+/*HEADER*/
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("img/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  /*100% of viewport*/
+  height: 100vh;
+}
+
+.hero-text-box {
+  position: absolute;
+  width: 1140px;
+  top: 50%;
+  left: 50%;
+  /*50/50 top and left*/
+  transform: translate(-50%, 50%);
+}
+
+.logo {
+  height: 100px;
+  width: auto;
+  float: left;
+  margin-top: 20px;
+}
+
+.main-nav {
+  float: right;
+  list-style: none;
+  margin-top: 60px;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+  padding: 8px 0;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  /*90% of 20px in html*/
+  font-size: 90%;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+  border-bottom: 2px solid white;
+}
+
+/*FEATURES *****************/
+
+.features-section .long-copy {
+  margin-bottom: 40px;
+}
+
+/*MEALS*/
+
+.section-meals {
+  padding: 0;
+}
+
+.meals-showcase {
+  list-style: none;
+  width: 100%;
+}
+
+.meals-showcase li {
+  display: block;
+  float: left;
+  /*4 li with equal width*/
+  width: 25%;
+}
+
+.meal-photo {
+  width: 100%;
+  margin: 0;
+  /*stop overflow of imgs*/
+  overflow: hidden;
+}
+
+.meal-photo img {
+  opacity: 0.7;
+  /*image will be as wide as parent container (meal-photo)*/
+  width: 100%;
+  height: auto;
+  /*115%*/
+  transform: scale(1.15);
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.meal-photo img:hover {
+  /*back to normal view of image and get rid of white space*/
+  transform: scale(1.03);
+  opacity: 1;
+}
