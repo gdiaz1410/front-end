@@ -104,6 +104,35 @@ h2:after {
   margin-bottom: 10px;
 }
 
+.icon-small {
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+  font-size: 120%;
+  margin-right: 10px;
+  /* to align text and icons */
+  line-height: 120%;
+  vertical-align: middle;
+  margin-top: -4px;
+}
+
+/*SOCIAL MEDIA LINKS ************/
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: orange;
+  border-bottom: 1px solid orange;
+  padding-bottom: 1px;
+  transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active {
+  border-bottom: 1px solid transparent;
+  color: gray;
+}
+
 /*BUTTONS *****************/
 
 /*a tag in normal state then when visited*/
@@ -276,8 +305,27 @@ header {
   margin-right: 25px;
 }
 
+/*clear hover effects of a tags*/
+.btn-app:link,
+.btn-a:visited {
+  border: 0;
+}
+
 .btn-app img {
   height: 50px;
   width: auto;
   margin-right: 10px;
+}
+
+/*CITIES*/
+
+.box img {
+  /*as wide as the .box*/
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.city-feature {
+  pad
 }
