@@ -14,6 +14,16 @@ html {
   text-rendering: optimizeLegibility;
 }
 
+/*clear float after an element. clearfix class on uls on section meals*/
+.clearfix {zoom: 1}
+.clearfix:after {
+  content: '.';
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
 /*COMPONENTS *********/
 
 .row {
@@ -223,4 +233,51 @@ header {
   /*back to normal view of image and get rid of white space*/
   transform: scale(1.03);
   opacity: 1;
+}
+
+/*HOW IT WORKS*/
+
+/*left text box*/
+.steps-box:first-child {
+  text-align: right;
+  /*responsive design*/
+  padding-right: 3%;
+  margin-top: 30px;
+}
+
+.steps-box:last-child {
+  padding-left: 3%;
+  margin-top: 70px;
+}
+
+.app-screen {
+  width: 40%;
+}
+
+.work-step {
+  margin-bottom: 50px;
+}
+
+/*last work step class */
+.work-step:last-of-type {
+  margin-bottom: 80px;
+}
+
+.work-step div {
+  color: orange;
+  border: 2px solid orange;
+  display: inline-block;
+  border-radius: 50%;
+  height: 55px;
+  width: 55px;
+  text-align: center;
+  float: left;
+  font-size: 150%;
+  margin-right: 25px;
+}
+
+.btn-app img {
+  height: 50px;
+  width: auto;
+  margin-right: 10px;
 }
