@@ -113,7 +113,7 @@ h2:after {
   /* to align text and icons */
   line-height: 120%;
   vertical-align: middle;
-  margin-top: -4px;
+  margin-top: -5px;
 }
 
 /*SOCIAL MEDIA LINKS ************/
@@ -144,8 +144,8 @@ a:active {
   font-weight: 300;
   text-decoration: none;
   border-radius: 200px;
-  color: #fff;
-  border: 1px solid #fff;
+  color: orange;
+  border: 1px solid orange;
   transition: background-color 0.2s;
 }
 
@@ -369,4 +369,61 @@ cite img {
   border-radius: 50%;
   margin-right: 10px;
   vertical-align: middle;
+}
+
+/*Sign Up *************************/
+
+.plans {
+  background-color: #f4f4f4;
+}
+
+.plan-box {
+  background-color: #fff;
+  border-radius: 5px;
+  /*parent is col*/
+  width: 90%;
+  margin-left: 5%;
+  box-shadow: 0 2px 2px #fff;
+}
+
+.plan-box div {
+  padding: 15px;
+  border-bottom: 1px solid #efefef;
+}
+
+.plan-box div:first-child {
+  background-color: #fcfcfc;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.plan-box div:last-child {
+  text-align: center;
+  border: none;
+}
+
+.plan-price {
+  font-size: 300%;
+  margin-bottom: 10px;
+  font-weight: 100;
+  color: orange;
+}
+
+.plan-price span {
+  /*30% of 300% on plan price*/
+  font-size: 30%;
+  font-weight: 300;
+}
+
+.meal-price {
+  font-size: 80%;
+}
+
+.plan-box ul {
+  list-style: none;
+  display: inline-block;
+}
+
+.plan-box ul li {
+  padding: 5px 0;
 }
