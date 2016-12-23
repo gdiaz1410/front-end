@@ -6,12 +6,14 @@
   box-sizing: border-box;
 }
 
-html {
+html,
+body {
   color: #555;
   /*font-family: ;*/
   font-size: 20px;
   /*font-weight: ;*/
   text-rendering: optimizeLegibility;
+  overflow-x: hidden;
 }
 
 /*clear float after an element. clearfix class on uls on section meals*/
@@ -191,6 +193,7 @@ header {
   background-attachment: fixed;
 }
 
+/*class on media query*/
 .hero-text-box {
   position: absolute;
   width: 1140px;
