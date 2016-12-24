@@ -204,10 +204,11 @@ header {
 }
 
 .logo {
-  height: 100px;
+  height: 80px;
   width: auto;
   float: left;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .main-nav {
@@ -235,8 +236,28 @@ header {
 
 .main-nav li a:hover,
 .main-nav li a:active {
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid #FFF;
 }
+
+/*sticky nav*/
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #000;
+  /*defines vertical stack of elements. Will be on top of all other elements*/
+  z-index: 9999;
+}
+
+.sticky .main-nav { margin-top: 20px; }
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+  padding: 8px 0;
+  color: #555;
+}
+
 
 /*FEATURES *****************/
 
